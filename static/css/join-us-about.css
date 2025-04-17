@@ -1,0 +1,101 @@
+/* General styles for the page */
+    .share-fab {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #17260E;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 999;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        transition: background 0.3s ease;
+    }
+
+    .share-fab:hover {
+        background-color: #1f3c12;
+    }
+
+    .share-popup {
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+        animation: fadeInUp 0.4s ease forwards;
+    }
+
+    .share-popup.active {
+        display: flex;
+    }
+
+    .share-popup .close-btn {
+        align-self: flex-end;
+        font-size: 18px;
+        cursor: pointer;
+        color: #555;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+    }
+
+    .share-popup .close-btn:hover {
+        color: #000;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    .social-icons i {
+        color: #01881e;
+    }
+
+    .social-icons a {
+        font-size: 22px;
+        color: #333;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+        color: #17260E;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeOutDown {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    }
+
+
+
+
+
+

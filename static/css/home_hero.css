@@ -1,0 +1,189 @@
+/*     fill: #1788DE; */
+.img-container{
+    position: relative;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    min-height: 700px; /* Adjust height as needed */
+    background-image: url('/build/assets/images/img.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    ;
+  }
+  
+  /* Color tint over background image */
+  .img-container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a3d0ea2; /* Change tint color */
+    z-index: 1;
+  }
+
+.zyoa-hero-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    flex-direction: row;
+    margin-top: 10px;
+
+    z-index: 1;
+}
+.zyoa-hero-content-Left {
+    display: flex;
+    width: 50%;
+    margin-left: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.zyoa-hero-content-Left h1 {
+    font-size: 2.5rem; 
+    color: white;
+    max-width: 220px;
+  }
+  .zyoa-hero-content-Left h3 {
+
+    margin-top: 20px;
+    font-family: Verdana;
+    color: white;
+    max-width: 70%;
+
+  }
+  .zyoa-hero-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-top: 50px; 
+  }
+  .zyoa-button-a-hero {
+    background-color: #01881e;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #01881e;
+    border-radius: 4px;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; 
+  }
+  .zyoa-button-b-hero {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; 
+  }
+    .zyoa-button-a-hero:hover {
+        background-color: #17260E;
+        color: white;
+    }
+    .zyoa-button-b-hero:hover {
+        background-color: #17260E;
+        color: white;
+    }
+    
+  /* update container */
+  .zyoa-update-container {
+    display: flex;
+    width: 300;
+    height: 200px;
+    margin-right: 50px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    overflow: hidden; /* to keep bg within radius */
+    background-color: rgba(23, 38, 14, 0.7);
+  }
+  .zyoa-update-container h2 {
+    margin: 0;
+    z-index: 1;
+    color: white;
+  }
+  .zyoa-update-container-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 100px;
+    border-radius: 8px;
+    background-color: rgb(1, 87, 19, 0.9);
+    align-items: center;
+    margin-top: 10px;
+  }
+    .zyoa-update-container-div p {
+        margin: 0;
+        z-index: 1;
+        margin-top: 10px;
+        color: white;
+    }
+    .zyoa-update-container-div a {
+        z-index: 1;
+        
+    }
+    .zyoa-update-container-div svg {
+        z-index: 1;
+        color: white;
+        width: 20px;
+        height: 20px;
+        rotate: -90deg;
+        align-self: center;
+    }
+    .zyoa-update-container:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+
+    /* Responsive Design for smaller screens */
+    @media screen and (max-width: 768px) {
+        .img-container {
+            border-radius: 6px;
+            background-image: url('/build/assets/images/img2.jpg');
+            min-height: 500px; /* Adjust height for smaller screens */
+            flex-direction: column; /* Stack elements vertically */
+          }
+        .zyoa-hero-content-Left {
+            width: 100%;
+        }
+        .zyoa-hero-content {
+            flex-direction: column;
+        }
+        .zyoa-hero-content-Left h1 {
+          font-size: 1.5rem; 
+          color: white;
+          margin-top: 10px;
+          max-width: 150px;         
+        }
+        .zyoa-hero-content-Left h3 {
+          font-size: 1rem;
+          color: white;
+          max-width: 80%;
+          margin-top: 15px ; 
+        }
+        .zyoa-button-b-hero  {
+          padding: 6px 12px;
+          font-size: 0.8rem;
+        }
+        .zyoa-button-a-hero  {
+          padding: 6px 12px;
+          font-size: 0.8rem;
+        }
+      
+        .zyoa-update-container {
+          visibility: collapse; 
+          position: absolute;
+          z-index: -2;
+        }
+
+
+
+    }

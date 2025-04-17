@@ -1,0 +1,216 @@
+    /* section 2 */
+    .section-2-zyoa {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px; 
+        z-index: 1;
+        overflow: hidden;
+      }
+      .section-2-zyoa-image {
+        width: 400px ; 
+        height: auto ;
+        align-items: center;
+      }
+      .section-2-zyoa-image img {
+        margin-right: 100px;
+      }
+      
+      .section-2-zyoa-content {
+        display: flex;
+        max-width: 50%;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 70px;
+        margin-left: 70px;
+      }
+      .section-2-zyoa-content h4{
+        font-size: 1rem;
+        margin-right: 5px;
+      
+      }
+   
+      .zyoa-p-2 {
+        margin-top: 40px;
+      }
+      .dark-green-text {
+        color: #1A3D0E;
+      }
+      .zyoa-button-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 70px;
+      }
+    
+      .zyoa-button-a {
+        background-color: #01881e;
+        color: white;
+        margin-top: 50px;
+        padding: 10px 20px;
+        border: 2px solid rgb(1, 136, 30);
+        border-radius: 4px;
+        cursor: pointer; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-right: 10px; 
+      }
+      .zyoa-button-b {
+        background-color: transparent;
+        color: #17260E;
+        margin-top: 50px;
+        padding: 10px 20px;
+        border: 2px solid #17260E;
+        border-radius: 4px;
+        cursor: pointer; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.102);
+        margin-right: 10px; 
+      }
+        
+        .zyoa-button-a:hover {
+            background-color: #17260E;
+            color: white;
+        }
+        .zyoa-button-b:hover {
+            background-color: #17260E;
+            color: white;
+        }
+  
+      /* amimation popup */
+      .scroll-item {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s ease-out, transform 1s ease-out;
+        will-change: opacity, transform;
+      }
+      
+      
+      /* Triggered when element is visible */
+      .scroll-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      
+    
+      /* end section 2 */
+        /* Responsive Design for smaller screens */
+    @media screen and (max-width: 768px) {
+       .section-2-zyoa {
+            display: flex;
+            flex-direction: row-reverse;
+           position: relative;
+            margin-top: 50px; 
+            z-index: 1;
+          }
+      .zyoa-content-container h1 {
+        font-size: 1.5rem; 
+        color: white;
+        margin-top: 20px;
+        margin-left: 0px;
+        max-width: 150px;
+        
+      }
+      .zyoa-content-container h3 {
+        font-size: 1rem;
+        color: white;
+        max-width: 250px;
+        margin-top: 30px ; 
+      }
+      .zyoa-button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+      }
+      .zyoa-button-b  {
+        margin-top: 10px;
+        padding: 6px 12px;
+        font-size: 0.8rem;
+      }
+      .zyoa-button-a  {
+        margin-top: 10px;
+        padding: 6px 12px;
+        font-size: 0.8rem;
+      }
+      .section-2-zyoa-image {
+        width: 100%;
+        height: auto; 
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    
+      }
+      
+      .section-2-zyoa-image img {
+        width: 100%;
+        max-width: 300px;
+        max-height: 380px;
+        min-height: 300px;
+        height: auto; 
+
+      }
+      
+      .section-2-zyoa-content {
+        display: flex; 
+        flex-direction: column;   
+        margin-left: 1px;
+        margin-top: 15px;
+        width: auto;
+        min-width: 100%;
+      }
+      .section-2-zyoa {
+        margin-top: 10px;
+      }
+      .section-2-zyoa-content h1{
+        font-size: 1.5rem;
+        margin-top: 0px;
+        width: 100%;
+      }
+      .section-2-zyoa-content h4{
+        font-size: 1rem;
+        margin-right: 5px;
+        text-align: flex-start;
+      }
+      .zyoa-p-2{
+        width: 100%;
+        font-size: 0.9rem; 
+        margin-top: 5px;
+      }
+      .section-2-zyoa-content p{
+        margin-top: 0px;
+      }
+      @media screen and (orientation: portrait) {
+        .zyoa-p-2{
+        width: 100%;
+        font-size: 0.7rem; 
+        margin-top: 5px;
+        text-align:unset;
+      }
+      .section-2-zyoa-image img {
+        width: 100%;
+        max-width: 300px;
+        max-height: 380px;
+        min-height: 320px;
+        height: auto; 
+      }
+      .zyoa-button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-left: 0px;
+    
+      }
+      .zyoa-button-b  {
+        margin-top: 0px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+      }
+      .zyoa-button-a  {
+        margin-top: 0px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+      }
+  }
+}

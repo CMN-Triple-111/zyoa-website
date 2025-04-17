@@ -1,0 +1,227 @@
+.zyoa-blog-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 30px 50px;
+    background-color: rgba(30, 113, 55, .05);
+}
+.zyoa-logo-blog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #17260E;
+    gap: 5px;
+    justify-content: start;
+    align-content: center;
+}
+.zyoa-logo-blog h3 {
+    justify-self: center;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.zyoa-logo-blog img {
+    position: relative;
+    width: 40px; 
+    height: 40px; 
+    margin-top: 0px;
+    align-self: center;
+}
+.blog-quick-links-container {
+    flex-direction: column;
+    align-self: end;
+}
+.blog-quick-links-container h1 {
+    color: black;
+    font-size: 1rem;
+
+}
+.blog-quick-links {
+    align-self: end;
+}
+.blog-quick-links a {
+    color: #007b5e;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: .9rem;
+}
+.container-blog-footer-phone-social {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.blog-footer-social-icons {
+    flex-direction: row;
+    align-self: center;
+}
+.blog-footer-social-icons a {
+    text-decoration: none;
+    margin: 0px 5px;
+}
+.blog-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #007b5e;
+}
+
+
+.blog-post {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start; /* 👈 ensures horizontal alignment */
+    background: #f4f4f4;
+    margin: 15px 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 6px;
+}
+.blog-post img {
+width: 190px;
+height: 190px;
+object-fit: cover;
+border-radius: 6px;
+flex-shrink: 0;
+}
+
+.post-content {
+flex: 1;
+min-width: 0;
+}
+.post-content a {
+    text-decoration: none;
+ }
+
+.post-content h3 {
+font-size: 1.25rem;
+font-weight: bold;
+color: #222;
+margin-bottom: 8px;
+}
+
+.post-content p {
+color: #444;
+width: 100%;
+font-size: 0.95rem;
+line-height: 1.5;
+margin-bottom: 10px;
+}
+
+.post-meta {
+font-size: 0.85rem;
+color: #666;
+}
+
+.post-meta a {
+color: #007b5e;
+text-decoration: none;
+font-weight: 500;
+}
+
+.post-meta span {
+margin-left: 5px;
+}
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+#pagination-controls {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-top: 20px;
+}
+
+.pagination button {
+    padding: 6px 12px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #a3a3a3;
+    border-radius: 4px;
+    cursor: pointer; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button.active {
+  background: rgb(0, 123, 47, 0.3);
+  color: black;
+  border: 2px solid #007b2f;
+}
+
+
+.blog-header-container {
+    position: relative;
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    min-height: 500px; /* Adjust height as needed */
+    background-image: url('/build/assets/images/farmer.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.blog-header-container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a3d0ea2; /* Change tint color */
+    z-index: 1;
+}
+.blog-header-container-title {
+    color: white;
+    width: 100%;
+    z-index: 1;
+    justify-items: center;
+}
+.blog-header-container-title h1 {
+    font-size: 5rem;
+    font-family: Verdana;
+}
+.blog-header-container-title p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .blog-post {
+        flex-direction: row;
+        align-items: flex-start;
+        min-width: 300px;
+    }
+
+    .blog-post img {
+        width: 100%;
+        max-width: 120px;
+        max-height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .post-content h3 {
+        font-size: 1rem;
+    }
+
+    .post-content p {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .post-meta {
+        font-size: 0.8rem;
+    }
+    .blog-header-container-title h1 {
+        font-size: 4rem;
+    }
+}
+
+
+

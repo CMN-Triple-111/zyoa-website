@@ -1,0 +1,96 @@
+/* Button link in normal state */
+.btn-hover-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   
+  }
+  
+  /* Button link in hover state */
+  .btn-hover-right:hover {
+    cursor: pointer;
+  }
+  
+  /* Button link styles */
+.btn-hover-right a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 220px;
+    height: 50px;
+    gap: 16px;
+    border-radius: 60px;
+    background: #17260E;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  /* Pseudo-element in normal state */
+  .btn-hover-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #01881e;
+    border-radius: 60px;
+    z-index: 1;
+    transition: transform 500ms ease-in-out;
+  }
+  
+  /* Pseudo-element in hover state */
+  .btn-hover-right a:hover::after {
+    transform: translateX(65%);
+  }
+  
+  /* Text in normal state */
+  .btn-hover-right span {
+    margin-left: -20px;
+    z-index: 2;
+  }
+  
+  /* Arrows in normal state */
+  .btn-hover-right i {
+    position: relative;
+    transition: transform 500ms ease-in-out,
+                opacity 500ms ease-in-out;
+    z-index: 2;
+  }
+  
+  /* Hidden arrow in normal state */
+  .last {
+    opacity: 0;
+    transform: translateX(250%);
+  }
+  
+  /* Visible arrow in normal state becomes invisible in hover state */
+  .btn-hover-right a:hover .first {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  
+  /* Hidden arrow in normal state becomes visible in hover state */
+  .btn-hover-right a:hover .last {
+    transform: translateX(510%);
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .btn-hover-right a {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 40px;
+        font-size: 16px;
+    }
+   
+  }
+
