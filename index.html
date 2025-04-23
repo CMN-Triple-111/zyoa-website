@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZYOA Home</title>
-    <link rel="stylesheet" type="text/css" href="/build/static/css/section-2-home.css">
-    <link rel="stylesheet" type="text/css" href="/build/static/css/section-3-home.css">
-    <link rel="stylesheet" type="text/css" href="/build/static/css/section-4-home.css">
-    <link rel="stylesheet" type="text/css" href="/build/static/css/home_hero.css">
-    <link rel="stylesheet" type="text/css" href="/build/static/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="/build/static/css/join-us-btn.css">
-    <link rel="stylesheet" type="text/css" href="/build/static/css/footer.css">
+    <link rel="icon" type="image/png" href="assets/icons/soursop.png">
+    <link rel="stylesheet" type="text/css" href="static/css/section-2-home.css">
+    <link rel="stylesheet" type="text/css" href="static/css/section-3-home.css">
+    <link rel="stylesheet" type="text/css" href="static/css/section-4-home.css">
+    <link rel="stylesheet" type="text/css" href="static/css/home_hero.css">
+    <link rel="stylesheet" type="text/css" href="static/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="static/css/join-us-btn.css">
+    <link rel="stylesheet" type="text/css" href="static/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <head>
@@ -18,10 +19,10 @@
     </head>
     <body>
 
-        <div class="img-container">
+        <div class="img-container" style="background-image: url('assets/images/img.jpg'); ">
             <div class="zyoa-navbar-container"> <!--Navbar-->
                 <a class="zyoa-logo-container" href="/base" style="text-decoration: none;">
-                    <img src="/build/assets/icons/soursop.png">
+                    <img src="assets/icons/soursop.png">
                     <h2>ZYOA</h2>
                     <h4>Concept</h1>
                 </a>
@@ -32,9 +33,9 @@
                         </div>
                         <ul class="nav-links-zyoa">
                             <li><a href="#" class="active"><i class="fas fa-home"></i>Home</a></li>
-                            <li><a href="/about"><i class="fas fa-info-circle"></i>About</a></li>
-                            <li><a href="/blog"><i class="fas fa-briefcase"></i>Blog</a></li>
-                            <li><a href="/contacts"><i class="fas fa-envelope"></i>Contact</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i>About</a></li>
+                            <li><a href="blog.html"><i class="fas fa-briefcase"></i>Blog</a></li>
+                            <li><a href="contacts.html"><i class="fas fa-envelope"></i>Contact</a></li>
                         </ul>
                     </nav>
                 
@@ -47,7 +48,7 @@
                     <h3>ZYOA is dedicated to empower youth and small-scale farmers with organic solutions for a healthier, more sustainable Zambia.</h3>  
                     <div class="zyoa-hero-button-container ">
                         <button class="zyoa-button-a-hero" type="button">Get Started</button>
-                        <button type="button" class="zyoa-button-b-hero" onclick="location.href='/about#who-we-are'">Learn More</button>     
+                        <button type="button" class="zyoa-button-b-hero" onclick="location.href='about.html#who-we-are'">Learn More</button>     
                     </div>
               
                 </div>
@@ -56,7 +57,7 @@
                     <h2>Latest Updates</h2>
                     <div class="zyoa-update-container-div ">
                         <p>Stay tuned for our latest news and updates.</p>
-                        <a href="/blog">
+                        <a href="blog.html">
                         <svg xmlns="https://www.w3.org/2000/svg"  viewBox="0 0 448 512"><path fill="#FFFFFF" d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"></path></svg>
                         </a>
                     </div>
@@ -77,15 +78,15 @@
                     <p class="scroll-item zyoa-p-2">At ZYOA, we are committed to revolutionizing the agricultural landscape in Zambia.</p>
                 </div>    
                 <div class="zyoa-button-container">
-                    <a href="/about" style="text-decoration: none;"><button class="zyoa-button-a"  type="button">About Us</button></a>
-                    <button type="button" class="zyoa-button-b" onclick="location.href='/about#mission-vision'">Learn More</button>     
+                    <a href="about.html" style="text-decoration: none;"><button class="zyoa-button-a"  type="button">About Us</button></a>
+                    <button type="button" class="zyoa-button-b" onclick="location.href='about.html#mission-vision'">Learn More</button>     
                 </div>
             </div>
             
 
             
             <div class="section-2-zyoa-image">
-                <img src="/build/assets/images/a.png" class="img-fluid" alt="ZYOA Image">
+                <img src="assets/images/a.png" class="img-fluid" alt="ZYOA Image" loading="lazy">
             </div>
 
         </section><!--End of Section 2-->
@@ -94,16 +95,16 @@
         <div class="section-4-home">
             <div class="section-4-home-left">
                 <h1>What We Do</h1>
-                <img class="find-out-more-img" src="/build/assets/icons/recycle.gif">
+                <img class="find-out-more-img" src="assets/icons/recycle.gif" loading="lazy">
                 <h6 class="we">We develop and distribute organic fertilizers</h6>
                 <h6 class="we">We Facilitate farmer Training & Capacity Building</h6>
                 <h6 class="we">We Empowerment Youth through Agriculture</h6>
                 <h6 class="we">We voice environmental awareness</h6>
                 <div class="find-out-more-btn">
-                    <a id="navigator-3" href="/about#what-we-do" role="link">Find Out More</a>
+                    <a id="navigator-3" href="about.html#what-we-do" role="link">Find Out More</a>
                 </div>
             </div>
-            <img class="hive-image img-fluid" src="/build/assets/images/hive2.png" >
+            <img class="hive-image img-fluid" src="assets/images/hive2.png" loading="lazy">
         </div>
 
         <!--Style for find out more-->
@@ -117,7 +118,7 @@
               <h4>Our innovative solutions are designed to help farmers thrive in an ever-changing world. With ZYOA, you can cultivate success.</p>
               <!-- This button uses icons from font awesome -->
                <div class="btn-hover-right container">
-                <a href="#" role="link">
+                <a href="contacts.html" role="link">
                     <i class="last fa fa-arrow-right-long"></i>
                         <span class="text">Join Us!</span>
                     <i class="first fa fa-arrow-right-long"></i>   
@@ -128,9 +129,9 @@
           
             <div class="right-div container">
               <div class="img-row">
-                <img id="img1" class="carousel-img " src="/build/assets/images/aa.jpg" loading="lazy" alt="Image 1">
-                <img id="img2" class="carousel-img" src="/build/assets/images/bb.jpg" loading="lazy" alt="Image 2">
-                <img id="img3" class="carousel-img" src="/build/assets/images/cc.jpg" loading="lazy" alt="Image 3">
+                <img id="img1" class="carousel-img " src="assets/images/aa.jpg" loading="lazy" alt="Image 1">
+                <img id="img2" class="carousel-img" src="assets/images/bb.jpg" loading="lazy" alt="Image 2">
+                <img id="img3" class="carousel-img" src="assets/images/cc.jpg" loading="lazy" alt="Image 3">
               </div>
             </div>
           </section>
@@ -138,16 +139,16 @@
 
         <!--Section 4-->
         <div class="svg-container">
-            <img class="svg-container-img-1 img-fluid" src="/build/static/svg/interface-svg2.svg" >
-            <img class="svg-container-img-2 img-fluid" src="/build/assets/icons/eco.png" alt="SVG Image">
+            <img class="svg-container-img-1 img-fluid" src="static/svg/interface-svg2.svg" loading="lazy">
+            <img class="svg-container-img-2 img-fluid" src="assets/icons/eco.png" alt="SVG Image" loading="lazy">
         </div><!--End of Section 4-->
 
         <!--Section 5-->
         <div class="image-text-container">
-            <img class="background-image" src="/build/assets/images/engagement.jpg" alt="Background" >
+            <img class="background-image" src="assets/images/engagement.jpg" alt="Background" loading="lazy">
             <div class="text-overlay">
                 <div >
-                    <img src="/build/assets/icons/encouragement_17659872.png">
+                    <img src="assets/icons/encouragement_17659872.png" loading="lazy">
                     <h1>Community Engagement & Outreach</h1>
                 </div>
                 <p>We work hand-in-hand with rural communities to promote environmentally responsible farming practices that enhance both yields and long-term land health.</p>              
@@ -169,7 +170,7 @@
         <!--Footer-->
         <footer class="zyoa-footer">
             <div class="Zyoa-footer-container">
-              <img class="green-world-svg" style="width: 250px; height: auto;" src="/build/assets/icons/green.gif">
+              <img class="green-world-svg" style="width: 250px; height: auto;" src="assets/icons/green.gif" loading="lazy">
 
               <div class="zyoa-footer-content-container">
                 <!--Social icons-->
@@ -202,10 +203,10 @@
                     <h3>Explore</h3>
                     <div class="explore-links">
                         <a href="#">Home</a>
-                        <a href="/about">About</a>
-                        <a href="/contacts">Contact Us</a>
+                        <a href="about.html">About</a>
+                        <a href="contacts.html">Contact Us</a>
                         <!-- <a href="#">Support</a> -->
-                        <a href="/blog">Blog</a>
+                        <a href="blog.html">Blog</a>
                     </div>
 
                 </div><!--End Explore-->
@@ -215,21 +216,21 @@
                     <div class="contact-address">
                         <div class="contact-plus-address"><!--Top-->                   
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>                                             
-                            <a href="#" target="_blank">+26077182277</a>
+                            <a href="contact:+260771827708" target="_blank">+26077182277</a>
                         </div>
                         <div class="contact-plus-address"><!--Middle-->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>          
-                            <a href="#" target="_blank">zyoz@info.zm</a>
+                            <a href="mailto:zyoa2025@gmail.com" target="_blank">zyoa2025@gmail.com</a>
                         </div>
                         <div class="location-foot"><!--Bottom-->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>              
-                            <a href="#" target="_blank">Libala South, Choppies Waterworks Street, 1234M/C, Lilayi Rd, Lusaka</a>
+                            <a href="#" target="_blank">Mudenda Village, Kanakantapa</a>
                         </div>
                     </div>
                 </div><!--End Get in touch-->
 
                 <div class="footer-map"><!--Map-->
-                    <img src="/build/assets/images/map.jpg">
+                    <img src="assets/images/map.jpg">
                 </div><!--End Map-->
                 </div>
             </div>
@@ -277,9 +278,9 @@
           </div>
         </footer><!--End of Footer-->
 
-        <script src="/build/static/js/home_img.js"></script>
-        <script src="/build/static/js/navbar.js"></script>
-        <script src="/build/static/js/home.js"></script>
+        <script src="static/js/home_img.js"></script>
+        <script src="static/js/navbar.js"></script>
+        <script src="static/js/home.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
     </body>
