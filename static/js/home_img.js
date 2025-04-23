@@ -1,10 +1,10 @@
 // This script handles the image rotation with fade-in and fade-out effects
   const imageSets = [
-    ["/build/assets/images/aa.jpg", "/build/assets/images/bb.jpg", "/build/assets/images/cc.jpg"],
-    ["/build/assets/images/dd.jpg", "/build/assets/images/ee.jpg", "/build/assets/images/ff.jpg"],
-    ["/build/assets/images/gg.jpg", "/build/assets/images/hh.jpg", "/build/assets/images/ii.jpg"],
-    ["/build/assets/images/jj.jpg", "/build/assets/images/kk.jpg", "/build/assets/images/ll.jpg"],
-    ["/build/assets/images/mm.jpg", "/build/assets/images/nn.jpg", "/build/assets/images/oo.jpg"],
+    ["assets/images/aa.jpg", "assets/images/bb.jpg", "assets/images/cc.jpg"],
+    ["assets/images/dd.jpg", "assets/images/ee.jpg", "assets/images/ff.jpg"],
+    ["assets/images/gg.jpg", "assets/images/hh.jpg", "assets/images/ii.jpg"],
+    ["assets/images/jj.jpg", "assets/images/kk.jpg", "assets/images/ll.jpg"],
+    ["assets/images/mm.jpg", "assets/images/nn.jpg", "assets/images/oo.jpg"],
     // Add more sets as needed
   ];
 
