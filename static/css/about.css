@@ -9,7 +9,7 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 580px; /* Adjust height as needed */
-    background-image: url('/build/assets/images/about-header.jpg');
+    background-image: url('assets/images/about-header.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -293,7 +293,7 @@ html {
 
 /* Join Us Section */
 .join-us-section {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/build/assets/images/members.jpg');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/images/members.jpg');
   background-size: cover;
   background-position: center;
   color: white;
