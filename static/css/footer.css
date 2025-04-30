@@ -21,6 +21,10 @@
 	justify-content: space-between;
 
 }
+.green-world-svg {
+	width: 250px; 
+	height: auto;
+}
 .zyoa-footer-content-container {
 	display: flex;
 	flex-direction: row;
@@ -156,15 +160,18 @@
 }
 
 
-
 @media screen and (max-width: 768px) {
 	.green-world-svg {
+		position: absolute;
 		width: 100%;
 		height: auto;
-		max-width: 50px;
+		max-width: 80px;
+		top: 25px;
+		left: 15px;
 	}
 	.zyoa-footer {
 		flex-direction: column;
+		min-width: 360px;
 	}
 	.Zyoa-footer-container {
 		flex-direction: column;
@@ -186,6 +193,10 @@
 	}
 	.footer-social-icons {
 		gap: 20px;
+		display: flex;
+		flex-direction: row;       
+		justify-content: flex-end;
+		margin-top: 0px;
 	}
 	.footer-social-icons svg {
 		width: 22px;
@@ -208,6 +219,7 @@
 		font-weight:500;
 		margin-left: 0px;
 		text-align: center;
+		
 	}
 	.footer-spacer-line {
 		position: relative; visibility: visible; width: 100%; z-index: 4;
@@ -242,6 +254,7 @@
 	}
 	.contact-plus-address  a{
 		text-align: center;
+		font-size: 0.85rem;
 		width: 100%;
 	}
 	.location-foot {

@@ -2,31 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-.about-img-container{
-    position: relative;
-    width: 100%;  
-    display: flex;
-    flex-direction: column;
-    min-height: 580px; /* Adjust height as needed */
-    background-image: url('assets/images/about-header.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    overflow: hidden;
-    ;
-  }
-  
-  /* Color tint over background image */
-.about-img-container::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1a3d0ea2; /* Change tint color */
-    z-index: 1;
-}
 .about-hero-content{
     display: flex;
     width: 100%;
@@ -128,6 +103,10 @@ html {
     flex-direction: column;
     justify-content: center;
   }
+  .vision-img {
+    width: 100px; height: auto; 
+    align-self: center;
+  }
   
   .vision-con h1 {
     max-width: 400px;
@@ -199,6 +178,8 @@ html {
     border-radius: 10px;
     cursor: pointer;
     color: white; /* text over image */
+    display: block; 
+    justify-content: center; 
 
 }
 .reveal-container img {
@@ -242,6 +223,11 @@ html {
 
 
 /* reveal 2 */
+.reveal-container-mid {
+  display: flex; flex-direction: column; gap: 20px; 
+  align-items: center; justify-content: center; 
+}
+
 .reveal-container-middle {
   position: relative;
   height: 200px; /* taller for better visibility */
@@ -254,8 +240,7 @@ html {
 }
 .reveal-container-middle img {
   position: absolute;
-  height: 420px; /* taller for better visibility */
-  width: 300px;
+  width: 300px; height: 200px;
   object-fit: cover;
   z-index: 0;
 }
@@ -293,15 +278,8 @@ html {
 
 /* Join Us Section */
 .join-us-section {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/images/members.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-  position: relative;
+  min-width: 360px;
 }
-
 .join-us-section h2 {
   font-size: 40px;
   margin-bottom: 20px;
@@ -328,7 +306,7 @@ html {
 .join-box {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  padding: 30px 40px;
+  padding: 15px 20px;
   border-radius: 12px;
   backdrop-filter: blur(8px);
   color: white;
@@ -353,6 +331,7 @@ html {
 }
 .what-we-do-title h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .content-what-we-do { 
@@ -365,7 +344,7 @@ html {
 }
 .do-content {
   display: flex;
-  width: 100%;
+  width: 100%; min-width: 360px;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
@@ -387,9 +366,43 @@ html {
   margin-bottom: 10px; /* Space below the paragraph */
   color: #17260E;
 }
+.aspiration-container {
+  text-align: center; 
+  color: black;
+}
+.spacer-d,
+.spacer-b{
+  height: 200px; visibility: hidden;
+}
+.spacer-bb {
+  height: 30px; background-color: #f0f0f0; 
+  border-radius: 5px; 
+  margin-top: 50px;
+}
+.spacer-c {
+  height: 8px; background-color: white; 
+  border-radius: 8px; margin: 0px 40px; 
+}
+
+
+.mission-vision-container {
+  display: flex; 
+  flex-direction: column; 
+  padding-top: 20px;
+}
+.mission-vision-container h1 {
+  text-align: center; 
+}
+.mission-vision-container p {
+  text-align: center; padding-bottom: 5px;
+}
+
+
+
 @media (max-width: 768px) {
   .content-what-we-do {              
       margin: 50px 10px;
+      min-height: 360px;
 
   }
   .content-what-we-do h1 {
@@ -565,6 +578,7 @@ html {
   }
 
   .section-three-about {
+    min-width: 360px;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;

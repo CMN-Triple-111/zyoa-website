@@ -108,15 +108,15 @@
 .container-phone-icon {
     width: 1em;
     height: 1em;
-    fill: #1788DE;
+    fill: #ffffff;
     transition: all 0.3s ease-in-out;
     display: flex;
     align-items: left;
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 10px;
 }
 .container-phone-icon svg:hover {
-    fill: #0A4B8C;
+    fill: #002508;
     transform: scale(1.2);
 }
 

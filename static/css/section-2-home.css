@@ -6,7 +6,12 @@
         justify-content: space-between;
         margin-top: 20px; 
         z-index: 1;
+        min-width: 360px;
         overflow: hidden;
+      }
+      .section-2-zyoa-2 {
+        display: flex; 
+        flex-direction: column;
       }
       .section-2-zyoa-image {
         width: 400px ; 
