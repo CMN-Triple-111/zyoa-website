@@ -104,17 +104,6 @@
     font-size: 20px;
     margin-right: 10px;
 }
-
-.container-phone-icon {
-    width: 1em;
-    height: 1em;
-    fill: #ffffff;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: left;
-    font-size: 30px;
-    margin-right: 10px;
-}
 .container-phone-icon svg:hover {
     fill: #002508;
     transform: scale(1.2);
